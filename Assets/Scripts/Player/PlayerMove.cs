@@ -9,10 +9,23 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Animator playerAnimator;
     Vector2 directions;     
 
+    [SerializeField] Transform playerSword;
+    [SerializeField] Vector2 attackRange;
+    [SerializeField] LayerMask attackableLayer;
+    [SerializeField] float damage;
+
+    //Test
+    [SerializeField] SpriteRenderer mySword;
+
     void Update()
     {
         directions.x = Input.GetAxis("Horizontal");
         directions.y = Input.GetAxis("Vertical");
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Attack();
+        }
 
         FacingDirection();
     }
@@ -28,6 +41,21 @@ public class PlayerMove : MonoBehaviour
         move.x = directions.x * moveSpeed;
         move.y = directions.y * moveSpeed;        
         self.velocity = move;        
+    }
+
+    private void Attack()
+    {
+        //Attackanimation here
+
+        Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(playerSword.position, attackRange, attackableLayer);
+        foreach (Collider2D item in hitEnemy)
+        {
+            try
+            {
+                item.GetComponent<EnemyHealth>().HitEnemy(damage);
+            }
+            catch (System.Exception) { }
+        }
     }
 
     private void FacingDirection()
