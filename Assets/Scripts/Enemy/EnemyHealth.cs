@@ -15,7 +15,6 @@ public class EnemyHealth : MonoBehaviour
 
     public void HitEnemy(float damage)
     {
-        Debug.Log($"I've been hit {damage}");
         enemyHealth -= damage;
 
         if (enemyHealth <= 0)
