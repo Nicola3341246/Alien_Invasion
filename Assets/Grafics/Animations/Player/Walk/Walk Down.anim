@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test_Up
+  m_Name: Walk Down
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 1, z: 0}
+        value: {x: 0, y: -1, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -33,7 +33,28 @@ AnimationClip:
     path: Sword
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: -1861124652, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - time: 0.083333336
+      value: {fileID: -1389011097, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - time: 0.16666667
+      value: {fileID: 454069552, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - time: 0.25
+      value: {fileID: -1443687408, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - time: 0.33333334
+      value: {fileID: -1443687408, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - time: 0.41666666
+      value: {fileID: -271586598, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - time: 0.5
+      value: {fileID: -247825752, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -41,6 +62,15 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1529145355
       attribute: 1
@@ -50,13 +80,20 @@ AnimationClip:
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
-    pptrCurveMapping: []
+    pptrCurveMapping:
+    - {fileID: -1861124652, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - {fileID: -1389011097, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - {fileID: 454069552, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - {fileID: -1443687408, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - {fileID: -1443687408, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - {fileID: -271586598, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
+    - {fileID: -247825752, guid: 324b7be797be54e4eb84ef965f0b4706, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -99,7 +136,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
