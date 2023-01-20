@@ -16,6 +16,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Vector2 attackRange;
     [SerializeField] float damage;
+    Vector2 Walkdirection;
 
     void Update()
     {
@@ -32,24 +33,32 @@ public class EnemyMovement : MonoBehaviour
         {
             enemyAnimator.SetFloat("Horizontal", 0);
             enemyAnimator.SetFloat("Vertical", 1);
+            Walkdirection.x = 0;
+            Walkdirection.y = 1;
         }
         // down
         else if (relativPositionY > 0 && (relativPositionX / relativPositionY) > -1 && (relativPositionX / relativPositionY) < 1)
         {
             enemyAnimator.SetFloat("Horizontal", 0);
             enemyAnimator.SetFloat("Vertical", -1);
+            Walkdirection.x = 0;
+            Walkdirection.y = -1;
         }
         // left
         else if (relativPositionX > 0)
         {
             enemyAnimator.SetFloat("Horizontal", -1);
             enemyAnimator.SetFloat("Vertical", 0);
+            Walkdirection.x = -1;
+            Walkdirection.y = 0;
         }
         // right
         else if (relativPositionX < 0)
         {
             enemyAnimator.SetFloat("Horizontal", 1);
             enemyAnimator.SetFloat("Vertical", 0);
+            Walkdirection.x = 1;
+            Walkdirection.y = 0;
         }
     }
 
@@ -77,6 +86,12 @@ public class EnemyMovement : MonoBehaviour
         {
             cooldown.Stop();
             cooldown.Reset();
+
         }
+    }
+    
+    private void WalkToPlayer()
+    {
+        
     }
 }
