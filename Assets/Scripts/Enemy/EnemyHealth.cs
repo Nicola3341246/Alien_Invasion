@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField] Vector2 startPosition;
+    [SerializeField] Transform self;
     [SerializeField] GameObject enemyObject;
     [SerializeField] float enemyMaxHealth;
     float enemyHealth;
@@ -19,7 +21,8 @@ public class EnemyHealth : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
-            enemyObject.SetActive(false);
+            self.position = startPosition;
+            enemyHealth = enemyMaxHealth;
         }
     }
 }

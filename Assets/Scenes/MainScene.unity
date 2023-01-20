@@ -4533,10 +4533,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4554,7 +4554,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -5779,6 +5779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+  selfTransform: {fileID: 0}
   self: {fileID: 943754532}
   playerAnimator: {fileID: 943754534}
   playerSword: {fileID: 1771589478}
@@ -11783,8 +11784,8 @@ GameObject:
   - component: {fileID: 2138683609}
   - component: {fileID: 2138683608}
   - component: {fileID: 2138683612}
-  - component: {fileID: 2138683613}
   - component: {fileID: 2138683610}
+  - component: {fileID: 2138683613}
   m_Layer: 3
   m_Name: TestEnemy
   m_TagString: Untagged
@@ -11850,7 +11851,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11944,6 +11945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da13c7171f1c474e9a1efaac342f6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPosition: {x: 0, y: -2}
+  self: {fileID: 2138683606}
   enemyObject: {fileID: 2138683605}
   enemyMaxHealth: 100
 --- !u!114 &2138683612
@@ -11968,6 +11971,8 @@ MonoBehaviour:
     m_Bits: 0
   attackRange: {x: 1, y: 1}
   damage: 10
+  walkSpeed: 10
+  self: {fileID: 2138683609}
 --- !u!95 &2138683613
 Animator:
   serializedVersion: 5
@@ -11978,7 +11983,7 @@ Animator:
   m_GameObject: {fileID: 2138683605}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 58b3b53c7f9be79489c2eec048d4d898, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2b98964de6a6ebc4cb0a03846f197e21, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

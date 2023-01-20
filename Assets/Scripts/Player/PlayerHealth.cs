@@ -19,7 +19,6 @@ public class PlayerHealth : MonoBehaviour
     public void DamagePlayer(float damge)
     {
         playerCurrentHealth -= damge;
-        Debug.Log($"{playerCurrentHealth}");
         healthbar.SetHealth(playerCurrentHealth);
         if (playerCurrentHealth <= 0)
         {
@@ -30,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
     public void HealPlayer(float heal)
     {
         playerCurrentHealth += heal;
-        Debug.Log($"{playerCurrentHealth}");
         if (playerCurrentHealth > playerMaxHealth)
         {
             playerCurrentHealth = playerMaxHealth;

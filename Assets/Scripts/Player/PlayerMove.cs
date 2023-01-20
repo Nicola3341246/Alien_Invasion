@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
+    [SerializeField] Transform selfTransform;
     [SerializeField] Rigidbody2D self;
     [SerializeField] Animator playerAnimator;
     Vector2 directions;     
@@ -77,7 +78,7 @@ public class PlayerMove : MonoBehaviour
         if (directions.y != 0 || directions.x != 0)
         {
             // facing left
-            if (directions.x < 0)
+            /*if (directions.x < 0)
             {
                 playerAnimator.SetFloat("Vertical", -1);
                 playerAnimator.SetFloat("Horizontal", 0);
@@ -99,7 +100,35 @@ public class PlayerMove : MonoBehaviour
             {
                 playerAnimator.SetFloat("Horizontal", -1);
                 playerAnimator.SetFloat("Vertical", 0);
+            }*/
+
+            float relativPositionX = directions.x;
+            float relativPositionY = directions.y;
+            // up
+            if (relativPositionY < 0 && (relativPositionX / relativPositionY) > -1 && (relativPositionX / relativPositionY) < 1)
+            {
+                playerAnimator.SetFloat("Horizontal", 0);
+                playerAnimator.SetFloat("Vertical", -1);
+            }
+            // down
+            else if (relativPositionY > 0 && (relativPositionX / relativPositionY) > -1 && (relativPositionX / relativPositionY) < 1)
+            {
+                playerAnimator.SetFloat("Horizontal", 0);
+                playerAnimator.SetFloat("Vertical", 1);
+            }
+            // left
+            else if (relativPositionX > 0)
+            {
+                playerAnimator.SetFloat("Horizontal", 1);
+                playerAnimator.SetFloat("Vertical", 0);
+            }
+            // right
+            else if (relativPositionX < 0)
+            {
+                playerAnimator.SetFloat("Horizontal", -1);
+                playerAnimator.SetFloat("Vertical", 0);
             }
         }
+
     }
 }

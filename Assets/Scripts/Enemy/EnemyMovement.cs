@@ -16,12 +16,16 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] LayerMask playerLayer;
     [SerializeField] Vector2 attackRange;
     [SerializeField] float damage;
+
+    [SerializeField] float walkSpeed;
+    [SerializeField] Rigidbody2D self;
     Vector2 Walkdirection;
 
     void Update()
     {
         FacingPosition();
         AttackPlayer();
+        WalkToPlayer();
     }
 
     private void FacingPosition()
@@ -92,6 +96,6 @@ public class EnemyMovement : MonoBehaviour
     
     private void WalkToPlayer()
     {
-        
+        self.velocity = Walkdirection * walkSpeed;
     }
 }
