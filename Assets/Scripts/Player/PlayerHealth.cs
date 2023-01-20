@@ -27,6 +27,17 @@ public class PlayerHealth : MonoBehaviour
         }
     }
     
+    public void HealPlayer(float heal)
+    {
+        playerCurrentHealth += heal;
+        Debug.Log($"{playerCurrentHealth}");
+        if (playerCurrentHealth > playerMaxHealth)
+        {
+            playerCurrentHealth = playerMaxHealth;
+        }
+        healthbar.SetHealth(playerCurrentHealth);
+    }
+    
     private void PlayerDead()
     {
         Debug.Log("You dead");
