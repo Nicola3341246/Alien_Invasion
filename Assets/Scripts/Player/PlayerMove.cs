@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Diagnostics;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,8 +15,14 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] LayerMask attackableLayer;
     [SerializeField] float damage;
 
-    //Test
     [SerializeField] SpriteRenderer mySword;
+    [SerializeField] float attackcooldown;
+    Stopwatch cooldown = new Stopwatch();
+
+    private void Start()
+    {
+        cooldown.Start();
+    }
 
     void Update()
     {
@@ -39,22 +46,28 @@ public class PlayerMove : MonoBehaviour
     {
         Vector2 move;
         move.x = directions.x * moveSpeed;
-        move.y = directions.y * moveSpeed;        
+        move.y = directions.y * moveSpeed;
+
+        playerAnimator.SetFloat("Speed", move.magnitude);
         self.velocity = move;        
     }
 
     private void Attack()
     {
-        //Attackanimation here
-
-        Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(playerSword.position, attackRange, attackableLayer);
-        foreach (Collider2D item in hitEnemy)
+        if (cooldown.ElapsedMilliseconds > attackcooldown)
         {
-            try
+            cooldown.Restart();
+            //Attackanimation here
+
+            Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(playerSword.position, attackRange, attackableLayer);
+            foreach (Collider2D item in hitEnemy)
             {
-                item.GetComponent<EnemyHealth>().HitEnemy(damage);
+                try
+                {
+                    item.GetComponent<EnemyHealth>().HitEnemy(damage);
+                }
+                catch (System.Exception) { }
             }
-            catch (System.Exception) { }
         }
     }
 

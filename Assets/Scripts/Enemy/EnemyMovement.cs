@@ -17,11 +17,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] Vector2 attackRange;
     [SerializeField] float damage;
 
-    private void Start()
-    {
-        cooldown.Start();
-    }
-
     void Update()
     {
         FacingPosition();
@@ -60,18 +55,28 @@ public class EnemyMovement : MonoBehaviour
 
     private void AttackPlayer()
     {
-        if (Vector2.Distance(selfPosition.position, playerPosition.position) < 2 && cooldown.ElapsedMilliseconds > attackCooldown)
+        if (Vector2.Distance(selfPosition.position, playerPosition.position) < 2)
         {
-            cooldown.Restart();
-            Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(sword.position, attackRange, playerLayer);
-            foreach (Collider2D item in hitEnemy)
+            cooldown.Start();
+
+            if (cooldown.ElapsedMilliseconds > attackCooldown)
             {
-                try
+                cooldown.Restart();
+                Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(sword.position, attackRange, playerLayer);
+                foreach (Collider2D item in hitEnemy)
                 {
-                    item.GetComponent<PlayerHealth>().DamagePlayer(damage);
+                    try
+                    {
+                        item.GetComponent<PlayerHealth>().DamagePlayer(damage);
+                    }
+                    catch (System.Exception) { }
                 }
-                catch (System.Exception) { }
             }
+        }
+        else
+        {
+            cooldown.Stop();
+            cooldown.Reset();
         }
     }
 }
