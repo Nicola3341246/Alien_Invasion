@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] Transform self;
     [SerializeField] GameObject enemyObject;
     [SerializeField] float enemyMaxHealth;
-    float enemyHealth;
+    public float enemyHealth;
 
     private void Start()
     {
