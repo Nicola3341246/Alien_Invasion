@@ -75,10 +75,10 @@ public class PlayerMove : MonoBehaviour
     private void FacingDirection()
     {
         // nothing
-        if (directions.y != 0 || directions.x != 0)
+        /*if (directions.y != 0 || directions.x != 0)
         {
             // facing left
-            /*if (directions.x < 0)
+            if (directions.x < 0)
             {
                 playerAnimator.SetFloat("Vertical", -1);
                 playerAnimator.SetFloat("Horizontal", 0);
@@ -100,7 +100,7 @@ public class PlayerMove : MonoBehaviour
             {
                 playerAnimator.SetFloat("Horizontal", -1);
                 playerAnimator.SetFloat("Vertical", 0);
-            }*/
+            }
 
             float relativPositionX = directions.x;
             float relativPositionY = directions.y;
@@ -128,7 +128,15 @@ public class PlayerMove : MonoBehaviour
                 playerAnimator.SetFloat("Horizontal", -1);
                 playerAnimator.SetFloat("Vertical", 0);
             }
-        }
+        }*/
 
+        // Wurde von hier inspiriert: https://answers.unity.com/questions/855976/make-a-player-model-rotate-towards-mouse-location.html
+        Vector2 playerPosition = Camera.main.WorldToViewportPoint(transform.position);
+        Vector2 mousePosition = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector2 RotatAnimation = new Vector2();
+        RotatAnimation.x = (mousePosition.x - playerPosition.x) * 10f;
+        RotatAnimation.y = (mousePosition.y - playerPosition.y) * 10f;
+        playerAnimator.SetFloat("Horizontal", RotatAnimation.x);
+        playerAnimator.SetFloat("Vertical", RotatAnimation.y);
     }
 }
