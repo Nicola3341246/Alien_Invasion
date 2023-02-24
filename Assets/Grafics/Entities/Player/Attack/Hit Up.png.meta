@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +105,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hit Up_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4661677, y: 0.40414193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7efaa1987856e47986185e27cb7e05
+      internalID: 1603574723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 17
+        height: 25
+      alignment: 9
+      pivot: {x: 0.43631566, y: 0.38632363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd32f9923014d5459e1b1b732b367bb
+      internalID: -1936757064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 17
+        height: 26
+      alignment: 9
+      pivot: {x: 0.44427624, y: 0.3750809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24058bf3308fe1344b12af44063e1cea
+      internalID: 2100304925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 18
+        height: 27
+      alignment: 9
+      pivot: {x: 0.4172982, y: 0.3696832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22ae3a6273b1d642abb11c20d31abd4
+      internalID: -1558322909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 18
+        height: 27
+      alignment: 9
+      pivot: {x: 0.40977988, y: 0.3696832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008c52a876b258347b56c213446b5e65
+      internalID: -1216811048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 16
+        height: 27
+      alignment: 9
+      pivot: {x: 0.46616745, y: 0.35965884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91040f8fd1d00894e9b725f266ef9e09
+      internalID: 1990251080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.364671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81514e9b10129345baa50a563cf427e
+      internalID: 1041839365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.509021, y: 0.35965884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1895e4f2c0ea6fe4cb63428f2ee925ca
+      internalID: -1209045217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_8
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.49999797, y: 0.3696832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4228ad0a7a89cd34897f77221699b92b
+      internalID: -821917598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_9
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 15
+        height: 25
+      alignment: 9
+      pivot: {x: 0.50901896, y: 0.40797627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e12bec91d81ba4eb5e3d132e6344d5
+      internalID: 1509526421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Up_10
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003a793453860324fb941b59d145762a
+      internalID: 1576139819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +347,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hit Up_3: -1558322909
+      Hit Up_2: 2100304925
+      Hit Up_5: 1990251080
+      Hit Up_6: 1041839365
+      Hit Up_9: 1509526421
+      Hit Up_1: -1936757064
+      Hit Up_4: -1216811048
+      Hit Up_8: -821917598
+      Hit Up_0: 1603574723
+      Hit Up_7: -1209045217
+      Hit Up_10: 1576139819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +105,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hit Down Player_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 20
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd18ae61b138e9c43ae963fbd6384ae4
+      internalID: -1571090462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 17
+        width: 15
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57619756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d4de4117ac75e438adf2a4815aaf2f
+      internalID: -1450547046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 15
+        width: 16
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5398288, y: 0.5955932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc4d36d65ab9944fbd52c14389a7ab1
+      internalID: -1428768493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 15
+        width: 16
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5298729, y: 0.60196626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1c9abcbd23e4149bf4b67d3a4d67ba
+      internalID: -308831091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 13
+        width: 18
+        height: 27
+      alignment: 9
+      pivot: {x: 0.47344548, y: 0.6239175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1546f191699b9f946b8b8d8881035ded
+      internalID: 191036413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_5
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 14
+        width: 15
+        height: 26
+      alignment: 9
+      pivot: {x: 0.48937786, y: 0.6103001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf311b8d42204de42bbc6b99e05bc8f7
+      internalID: -2019350521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_6
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 14
+        width: 15
+        height: 26
+      alignment: 9
+      pivot: {x: 0.48937786, y: 0.60417235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3272ca9029007474bb11463a8ffb8476
+      internalID: -1756367078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_7
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 14
+        width: 15
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6041723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb26aed466f2fe4487f5f4c0417aa7d
+      internalID: 888613093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_8
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 16
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47875568, y: 0.5862996}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfc35181d74eb945a23f4e101669a35
+      internalID: -917326708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Down Player_9
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 20
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e91938be6e9c9349ba58aef7f7344f8
+      internalID: 1392453870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +326,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hit Down Player_9: 1392453870
+      Hit Down Player_5: -2019350521
+      Hit Down Player_6: -1756367078
+      Hit Down Player_3: -308831091
+      Hit Down Player_4: 191036413
+      Hit Down Player_7: 888613093
+      Hit Down Player_0: -1571090462
+      Hit Down Player_8: -917326708
+      Hit Down Player_2: -1428768493
+      Hit Down Player_1: -1450547046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
