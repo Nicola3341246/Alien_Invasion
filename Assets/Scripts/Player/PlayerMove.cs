@@ -35,12 +35,8 @@ public class PlayerMove : MonoBehaviour
             Attack();
         }
 
-        FacingDirection();
-    }
-
-    private void FixedUpdate()
-    {
         Move();
+        FacingDirection();
     }
 
     private void Move()
@@ -58,7 +54,8 @@ public class PlayerMove : MonoBehaviour
         if (cooldown.ElapsedMilliseconds > attackcooldown)
         {
             cooldown.Restart();
-            //Attackanimation here
+            playerAnimator.Play("Attack");
+            UnityEngine.Debug.Log("ds");
 
             Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(playerSword.position, attackRange, attackableLayer);
             foreach (Collider2D item in hitEnemy)
@@ -74,62 +71,6 @@ public class PlayerMove : MonoBehaviour
 
     private void FacingDirection()
     {
-        // nothing
-        /*if (directions.y != 0 || directions.x != 0)
-        {
-            // facing left
-            if (directions.x < 0)
-            {
-                playerAnimator.SetFloat("Vertical", -1);
-                playerAnimator.SetFloat("Horizontal", 0);
-            }
-            // facing right
-            else if (directions.x > 0)
-            {
-                playerAnimator.SetFloat("Vertical", 1);
-                playerAnimator.SetFloat("Horizontal", 0);
-            }
-            // facing up
-            else if (directions.y > 0)
-            {
-                playerAnimator.SetFloat("Horizontal", 1);
-                playerAnimator.SetFloat("Vertical", 0);
-            }
-            // facing down
-            else if (directions.y < 0)
-            {
-                playerAnimator.SetFloat("Horizontal", -1);
-                playerAnimator.SetFloat("Vertical", 0);
-            }
-
-            float relativPositionX = directions.x;
-            float relativPositionY = directions.y;
-            // up
-            if (relativPositionY < 0 && (relativPositionX / relativPositionY) > -1 && (relativPositionX / relativPositionY) < 1)
-            {
-                playerAnimator.SetFloat("Horizontal", 0);
-                playerAnimator.SetFloat("Vertical", -1);
-            }
-            // down
-            else if (relativPositionY > 0 && (relativPositionX / relativPositionY) > -1 && (relativPositionX / relativPositionY) < 1)
-            {
-                playerAnimator.SetFloat("Horizontal", 0);
-                playerAnimator.SetFloat("Vertical", 1);
-            }
-            // left
-            else if (relativPositionX > 0)
-            {
-                playerAnimator.SetFloat("Horizontal", 1);
-                playerAnimator.SetFloat("Vertical", 0);
-            }
-            // right
-            else if (relativPositionX < 0)
-            {
-                playerAnimator.SetFloat("Horizontal", -1);
-                playerAnimator.SetFloat("Vertical", 0);
-            }
-        }*/
-
         // Wurde von hier inspiriert: https://answers.unity.com/questions/855976/make-a-player-model-rotate-towards-mouse-location.html
         Vector2 playerPosition = Camera.main.WorldToViewportPoint(transform.position);
         Vector2 mousePosition = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);

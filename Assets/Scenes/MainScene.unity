@@ -9258,7 +9258,7 @@ MonoBehaviour:
     m_Bits: 8
   damage: 20
   mySword: {fileID: 1771589479}
-  attackcooldown: 250
+  attackcooldown: 500
 --- !u!95 &943754534
 Animator:
   serializedVersion: 5
