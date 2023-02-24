@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Pause_Screen : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject[] otherMenus;
+
     bool isPaused = false;
     void Update()
     {
@@ -33,6 +35,10 @@ public class Pause_Screen : MonoBehaviour
     {
         isPaused = false;
         pauseMenu.SetActive(false);
+        foreach (var menu in otherMenus)
+        {
+            menu.SetActive(false);
+        }
         Time.timeScale = 1f;
     }
 
