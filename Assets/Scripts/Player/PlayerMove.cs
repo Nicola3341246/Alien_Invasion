@@ -20,6 +20,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float attackcooldown;
     Stopwatch cooldown = new Stopwatch();
 
+    [SerializeField] GameObject weapon;
+
+
     private void Start()
     {
         cooldown.Start();
@@ -34,7 +37,11 @@ public class PlayerMove : MonoBehaviour
         {
             Attack();
         }
-
+        if (Input.GetMouseButtonDown(1))
+        {
+            weapon.GetComponent<WeaponShoot>().Fire();
+            UnityEngine.Debug.Log("OKE");
+        }
         Move();
         FacingDirection();
     }
