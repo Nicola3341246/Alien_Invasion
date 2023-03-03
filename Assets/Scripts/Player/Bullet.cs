@@ -5,15 +5,19 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Rigidbody2D rb;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] float damage;
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        
+        try
+        {
+            other.GetComponent<EnemyHealth>().HitEnemy(damage);
+        }
+        catch (System.Exception)
+        {
+
+
+        }
+        Destroy(gameObject);
     }
 }
