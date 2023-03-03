@@ -5,20 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class DeathScreenLoad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void MainMenu()
     {
-        
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TryAgain()
     {
-        
-    }
-
-    public void LoadGame()
-    {
-        SceneManager.LoadScene("MainScene");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(1);
     }
 }

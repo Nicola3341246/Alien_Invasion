@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Healthbar healthbar;
     float playerCurrentHealth;
 
+    [SerializeField] GameObject DeathUI;
+
 
     void Start()
     {
@@ -39,5 +41,7 @@ public class PlayerHealth : MonoBehaviour
     private void PlayerDead()
     {
         Debug.Log("You dead");
+        Time.timeScale = 0f;
+        DeathUI.SetActive(true);
     }
 }
