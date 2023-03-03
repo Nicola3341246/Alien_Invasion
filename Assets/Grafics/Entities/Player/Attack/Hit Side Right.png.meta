@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +105,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hit Side Right_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 35
+        width: 18
+        height: 19
+      alignment: 9
+      pivot: {x: 0.37, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7477474e61ac1ba428f168bbb3df84b0
+      internalID: -1625337836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 35
+        width: 19
+        height: 19
+      alignment: 9
+      pivot: {x: 0.36, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90ebad21a913e54aa8f028e87715aa7
+      internalID: 582647327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 35
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.33, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e91f488e0090e34ba377aa4de86c5d0
+      internalID: -212280460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 35
+        width: 20
+        height: 19
+      alignment: 9
+      pivot: {x: 0.35265198, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0c5a9df276ef740b723de8eddefcbe
+      internalID: -1365715359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 35
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05031c055d35353468233d4ff9ea3739
+      internalID: -880228796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 35
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0d24a3cb8792f4ea6049e60ed9b0d0
+      internalID: -211951598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_6
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 35
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.336279, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be5c722a018705478db64dc25ecd5e6
+      internalID: 1461122127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_7
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 35
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.32458496, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a298687ea945547a05f65b7d70f27c
+      internalID: -1795532489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 35
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.33, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf4537ec1ad75647be8ea5732c89f2f
+      internalID: 743968040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_10
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 35
+        width: 19
+        height: 19
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000c559fd44460743acb22f84799c1c2
+      internalID: 553057590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit Side Right_12
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 35
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f45fa1c092ca04690b2860f6fd8765
+      internalID: 20290222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +347,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hit Side Right_11: -652689457
+      Hit Side Right_8: 743968040
+      Hit Side Right_1: 582647327
+      Hit Side Right_7: -1795532489
+      Hit Side Right_6: 1461122127
+      Hit Side Right_0: -1625337836
+      Hit Side Right_3: -1365715359
+      Hit Side Right_10: 553057590
+      Hit Side Right_5: -211951598
+      Hit Side Right_4: -880228796
+      Hit Side Right_9: 2038316920
+      Hit Side Right_2: -212280460
+      Hit Side Right_12: 20290222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
