@@ -20,6 +20,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float attackcooldown;
     Stopwatch cooldown = new Stopwatch();
 
+    [SerializeField] AudioSource walksound;
+    [SerializeField] AudioSource shotsound;
+
     [SerializeField] GameObject weapon;
 
 
@@ -37,11 +40,13 @@ public class PlayerMove : MonoBehaviour
         {
             Attack();
         }
+
         if (Input.GetMouseButtonDown(1))
         {
+            shotsound.Play();
             weapon.GetComponent<WeaponShoot>().Fire();
-            UnityEngine.Debug.Log("OKE");
         }
+
         Move();
         FacingDirection();
     }
@@ -51,6 +56,9 @@ public class PlayerMove : MonoBehaviour
         Vector2 move;
         move.x = directions.x * moveSpeed;
         move.y = directions.y * moveSpeed;
+
+        if (move.x > 0 || move.y > 0 || move.x < 0 || move.y < 0) { walksound.enabled = true; }
+        else { walksound.enabled = false; }
 
         playerAnimator.SetFloat("Speed", move.magnitude);
         self.velocity = move;        
@@ -62,7 +70,6 @@ public class PlayerMove : MonoBehaviour
         {
             cooldown.Restart();
             playerAnimator.Play("Attack");
-            UnityEngine.Debug.Log("ds");
 
             Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(playerSword.position, attackRange, attackableLayer);
             foreach (Collider2D item in hitEnemy)
