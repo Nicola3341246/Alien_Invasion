@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -22,6 +18,7 @@ public class Weapon : MonoBehaviour
         Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);
         Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
         float angle = AngleBetweenPoints(positionOnScreen, mouseOnScreen);
+        animator.SetFloat("Rotation", angle);
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
     }
     private static float AngleBetweenPoints(Vector2 a, Vector2 b) 
