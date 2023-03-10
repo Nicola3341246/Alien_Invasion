@@ -36,12 +36,12 @@ public class PlayerMove : MonoBehaviour
         directions.x = Input.GetAxis("Horizontal");
         directions.y = Input.GetAxis("Vertical");
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             Attack();
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             shotsound.Play();
             weapon.GetComponent<WeaponShoot>().Fire();
