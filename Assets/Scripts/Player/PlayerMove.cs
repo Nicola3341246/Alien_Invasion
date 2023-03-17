@@ -24,7 +24,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] AudioSource shotsound;
 
     [SerializeField] GameObject weapon;
-
+    [SerializeField] GameObject gun;
+    [SerializeField] Animator gunAnimator;
 
     private void Start()
     {
@@ -93,5 +94,15 @@ public class PlayerMove : MonoBehaviour
         RotatAnimation.y = (mousePosition.y - playerPosition.y) * 10f;
         playerAnimator.SetFloat("Horizontal", RotatAnimation.x);
         playerAnimator.SetFloat("Vertical", RotatAnimation.y);
+
+        float angle = AngleBetweenPoints(playerPosition, mousePosition);
+        gun.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        gunAnimator.SetFloat("Horizontal", RotatAnimation.x);
+        gunAnimator.SetFloat("Vertical", RotatAnimation.y);
+    }
+
+    private static float AngleBetweenPoints(Vector2 a, Vector2 b)
+    {
+        return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
 }

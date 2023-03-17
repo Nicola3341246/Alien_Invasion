@@ -10,43 +10,43 @@ BlendTree:
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 86f22c59b5f77b94bae206c8d9ba21a4, type: 2}
-    m_Threshold: -180
-    m_Position: {x: 180, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c09670f8b3f51ec4488da896fea74f69, type: 2}
-    m_Threshold: -59.999996
-    m_Position: {x: 90, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c758153599f070e409e0f83e1cf886e7, type: 2}
-    m_Threshold: 60.000008
-    m_Position: {x: 0, y: 0}
+    m_Threshold: -130
+    m_Position: {x: 0, y: 1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 969aabfbb2c3a3a4ead2cefeaa38da81, type: 2}
-    m_Threshold: 180
-    m_Position: {x: -90, y: 0}
+    m_Threshold: -40
+    m_Position: {x: 0, y: -1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Rotation
-  m_BlendParameterY: Blend
-  m_MinThreshold: -180
-  m_MaxThreshold: 180
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: c09670f8b3f51ec4488da896fea74f69, type: 2}
+    m_Threshold: 40
+    m_Position: {x: 1, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: c758153599f070e409e0f83e1cf886e7, type: 2}
+    m_Threshold: 130
+    m_Position: {x: -1, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  m_BlendParameter: Horizontal
+  m_BlendParameterY: Vertical
+  m_MinThreshold: -130
+  m_MaxThreshold: 130
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
-  m_BlendType: 0
+  m_BlendType: 2
 --- !u!1107 &-2599017604271508324
 AnimatorStateMachine:
   serializedVersion: 6
@@ -105,6 +105,18 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Rotation
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Horizontal
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Vertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
