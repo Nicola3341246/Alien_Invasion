@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 33226
+  controlID: 35004
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 33227
+  controlID: 35005
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 33164
+  controlID: 34952
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 33165
+  controlID: 34916
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,7 +262,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 52b0fdfff8f8ffff86f9ffff1afbffffd6680000ea6900002c6a00005e6a0000b46a0000d26a0000905301009a530100
+      m_ExpandedIDs: 52b0fdfff8f8ffff86f9ffff1afbffffd6680000ea6900002c6a00005e6a0000b46a0000d26a0000905301009a53010094540100ac540100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -669,9 +669,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 14.07526, y: -1.6259023, z: 0.060296945}
+    m_Target: {x: -2.4112837, y: 0.7354989, z: 0.15146688}
     speed: 2
-    m_Value: {x: 14.07526, y: -1.6259023, z: 0.060296945}
+    m_Value: {x: -2.4112837, y: 0.7354989, z: 0.15146688}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -721,9 +721,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 16.893097
+    m_Target: 6.472177
     speed: 2
-    m_Value: 16.893097
+    m_Value: 6.472177
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -989,8 +989,8 @@ MonoBehaviour:
     y: 430.4
     width: 1172
     height: 300.4
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -1043,23 +1043,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Item
+    - Assets/Audio/Sounds/Player
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Item
+  - Assets/Audio/Sounds/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Schule\Documents\2. Schuljahr\BBB\Lernatelier\LA_ILA2_1304\projekt\Alien_Invasion
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 63}
-    m_SelectedIDs: b0200100
-    m_LastClickedID: 73904
-    m_ExpandedIDs: 00000000066500002465000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: c4a30100
+    m_LastClickedID: 107460
+    m_ExpandedIDs: 00000000066500001c6500004a05010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1112,8 +1112,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ac540100
-    m_LastClickedInstanceID: 87212
+    m_SelectedInstanceIDs: c4550100
+    m_LastClickedInstanceID: 87492
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300005a620000e0950000086400009a66000004650000c2660000d8320100d4650000cab90000a26800002eca0000
     m_RenameOverlay:
@@ -1241,8 +1241,8 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 87212
-  m_LastVerticalScrollValue: 268
+  m_LastInspectedObjectInstanceID: 87492
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

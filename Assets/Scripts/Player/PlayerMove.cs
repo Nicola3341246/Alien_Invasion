@@ -22,6 +22,7 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] AudioSource walksound;
     [SerializeField] AudioSource shotsound;
+    [SerializeField] AudioSource attacksound;
 
     [SerializeField] GameObject weapon;
     [SerializeField] float gunDamage;
@@ -75,6 +76,7 @@ public class PlayerMove : MonoBehaviour
         {
             meleCooldown.Restart();
             playerAnimator.Play("Attack");
+            attacksound.Play();
 
             Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(playerSword.position, attackRange, attackableLayer);
             foreach (Collider2D item in hitEnemy)
