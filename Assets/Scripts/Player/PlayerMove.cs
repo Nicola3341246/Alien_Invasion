@@ -14,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Transform playerSword;
     [SerializeField] Vector2 attackRange;
     [SerializeField] LayerMask attackableLayer;
-    [SerializeField] float damage;
+    [SerializeField] float meleDamage;
 
     [SerializeField] SpriteRenderer mySword;
     [SerializeField] float attackcooldown;
@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] AudioSource shotsound;
 
     [SerializeField] GameObject weapon;
+    [SerializeField] float gunDamage;
     [SerializeField] GameObject gun;
     [SerializeField] Animator gunAnimator;
 
@@ -42,10 +43,10 @@ public class PlayerMove : MonoBehaviour
             Attack();
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && gun.active)
         {
             shotsound.Play();
-            weapon.GetComponent<WeaponShoot>().Fire();
+            weapon.GetComponent<WeaponShoot>().Fire(gunDamage);
         }
 
         Move();
@@ -77,7 +78,7 @@ public class PlayerMove : MonoBehaviour
             {
                 try
                 {
-                    item.GetComponent<EnemyHealth>().HitEnemy(damage);
+                    item.GetComponent<EnemyHealth>().HitEnemy(meleDamage);
                 }
                 catch (System.Exception) { }
             }

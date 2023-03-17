@@ -21,9 +21,10 @@ public class WeaponShoot : MonoBehaviour
         
     }
 
-    public void Fire()
+    public void Fire(float damage)
     {
-       GameObject projectlie = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        GameObject projectlie = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        projectlie.GetComponent<Bullet>().damage = damage;
         projectlie.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
     }
 }
