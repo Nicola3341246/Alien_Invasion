@@ -153,7 +153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12875666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.69, y: 3.61, z: 0}
+  m_LocalPosition: {x: 27, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da13c7171f1c474e9a1efaac342f6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: -2}
+  startPosition: {x: 27, y: 3}
   self: {fileID: 12875667}
   enemyObject: {fileID: 12875666}
   enemyMaxHealth: 100
@@ -631,7 +631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &101176457
 Transform:
   m_ObjectHideFlags: 0
@@ -807,7 +807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164709501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.87, y: -0.03, z: 0}
+  m_LocalPosition: {x: -8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da13c7171f1c474e9a1efaac342f6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: -2}
+  startPosition: {x: -8, y: 0}
   self: {fileID: 164709502}
   enemyObject: {fileID: 164709501}
   enemyMaxHealth: 100
@@ -10442,7 +10442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506306009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.29, y: -7.09, z: 0}
+  m_LocalPosition: {x: 8, y: -8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10482,7 +10482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da13c7171f1c474e9a1efaac342f6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: -2}
+  startPosition: {x: 8, y: -8}
   self: {fileID: 506306010}
   enemyObject: {fileID: 506306009}
   enemyMaxHealth: 100
@@ -13866,7 +13866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738622442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.14, y: 5.71, z: 0}
+  m_LocalPosition: {x: 16, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13906,7 +13906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da13c7171f1c474e9a1efaac342f6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: -2}
+  startPosition: {x: 16, y: 2}
   self: {fileID: 738622443}
   enemyObject: {fileID: 738622442}
   enemyMaxHealth: 100
@@ -15207,9 +15207,10 @@ MonoBehaviour:
   walksound: {fileID: 943754536}
   shotsound: {fileID: 1632959020}
   weapon: {fileID: 1457793862}
-  gunDamage: 20
+  gunDamage: 50
   gun: {fileID: 168157355}
   gunAnimator: {fileID: 168157358}
+  gunCooldownTime: 500
 --- !u!95 &943754534
 Animator:
   serializedVersion: 5
@@ -16190,7 +16191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0901be7dcacd02043993bf9c5253288f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1097119690}
+  gunItem: {fileID: 1097119689}
   range: 0.4
   playerLayer:
     serializedVersion: 2
@@ -25761,7 +25762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138683605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25905,7 +25906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da13c7171f1c474e9a1efaac342f6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: -2}
+  startPosition: {x: 0, y: 5}
   self: {fileID: 2138683606}
   enemyObject: {fileID: 2138683605}
   enemyMaxHealth: 100

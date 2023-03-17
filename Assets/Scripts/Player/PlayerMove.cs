@@ -28,11 +28,13 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] GameObject gun;
     [SerializeField] Animator gunAnimator;
 
-    Stopwatch gunCooldown;
+    Stopwatch gunCooldown = new Stopwatch();
+    [SerializeField] float gunCooldownTime;
 
     private void Start()
     {
         meleCooldown.Start();
+        gunCooldown.Start();
     }
 
     void Update()
@@ -45,10 +47,9 @@ public class PlayerMove : MonoBehaviour
             Attack();
         }
 
-        if (Input.GetMouseButtonDown(0) && gun.active)
+        if (Input.GetMouseButtonDown(0))
         {
-            shotsound.Play();
-            weapon.GetComponent<WeaponShoot>().Fire(gunDamage);
+            Shoot();
         }
 
         Move();
@@ -84,6 +85,17 @@ public class PlayerMove : MonoBehaviour
                 }
                 catch (System.Exception) { }
             }
+        }
+    }
+
+    private void Shoot()
+    {
+        if (gun.active && gunCooldown.ElapsedMilliseconds > gunCooldownTime)
+        {
+            gunCooldown.Restart();
+
+            shotsound.Play();
+            weapon.GetComponent<WeaponShoot>().Fire(gunDamage);
         }
     }
 
