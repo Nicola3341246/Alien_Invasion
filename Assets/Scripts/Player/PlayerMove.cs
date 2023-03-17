@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] SpriteRenderer mySword;
     [SerializeField] float attackcooldown;
-    Stopwatch cooldown = new Stopwatch();
+    Stopwatch meleCooldown = new Stopwatch();
 
     [SerializeField] AudioSource walksound;
     [SerializeField] AudioSource shotsound;
@@ -28,9 +28,11 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] GameObject gun;
     [SerializeField] Animator gunAnimator;
 
+    Stopwatch gunCooldown;
+
     private void Start()
     {
-        cooldown.Start();
+        meleCooldown.Start();
     }
 
     void Update()
@@ -68,9 +70,9 @@ public class PlayerMove : MonoBehaviour
 
     private void Attack()
     {
-        if (cooldown.ElapsedMilliseconds > attackcooldown)
+        if (meleCooldown.ElapsedMilliseconds > attackcooldown)
         {
-            cooldown.Restart();
+            meleCooldown.Restart();
             playerAnimator.Play("Attack");
 
             Collider2D[] hitEnemy = Physics2D.OverlapBoxAll(playerSword.position, attackRange, attackableLayer);
