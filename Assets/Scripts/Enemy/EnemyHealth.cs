@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] float enemyMaxHealth;
     public float enemyHealth;
 
+    [SerializeField] GameObject Supervisor;
+
     private void Start()
     {
         enemyHealth = enemyMaxHealth;
@@ -23,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
         {
             self.position = startPosition;
             enemyHealth = enemyMaxHealth;
+            Supervisor.GetComponent<GameSupervisor>().ChangeKillScore(1f);
         }
     }
 }
