@@ -120,6 +120,8 @@ public class PlayerMove : MonoBehaviour
 
     private static float AngleBetweenPoints(Vector2 a, Vector2 b)
     {
+        b.x = b.x * 0.9999f;
+        b.y = b.y * 0.9999f;
         return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
 }
