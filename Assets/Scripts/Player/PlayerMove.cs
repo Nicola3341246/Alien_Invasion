@@ -45,7 +45,7 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            Attack();
+            MeleAttack();
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -70,7 +70,7 @@ public class PlayerMove : MonoBehaviour
         self.velocity = move;        
     }
 
-    private void Attack()
+    private void MeleAttack()
     {
         if (meleCooldown.ElapsedMilliseconds > attackcooldown)
         {
