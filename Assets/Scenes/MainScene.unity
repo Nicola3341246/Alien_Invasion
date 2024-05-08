@@ -11565,6 +11565,8 @@ GameObject:
   - component: {fileID: 653318716}
   - component: {fileID: 653318715}
   - component: {fileID: 653318714}
+  - component: {fileID: 653318718}
+  - component: {fileID: 653318717}
   m_Layer: 7
   m_Name: Border
   m_TagString: Obstacle
@@ -11618,7 +11620,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
@@ -14004,6 +14006,300 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!66 &653318717
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653318712}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 653318714}
+    m_ColliderPaths:
+    - - X: 170000000
+        Y: -10000000
+      - X: 450000000
+        Y: -10000000
+      - X: 450000000
+        Y: 110000000
+      - X: -90000000
+        Y: 110000000
+      - X: -90000000
+        Y: -120000000
+      - X: 170000000
+        Y: -120000000
+    - - X: -80000000
+        Y: -110000000
+      - X: -80000000
+        Y: 100000000
+      - X: 440000000
+        Y: 100000000
+      - X: 440000000
+        Y: 0
+      - X: 360000000
+        Y: 0
+      - X: 360000000
+        Y: 40000000
+      - X: 410000000
+        Y: 40000000
+      - X: 410000000
+        Y: 50000000
+      - X: 350000000
+        Y: 50000000
+      - X: 350000000
+        Y: 0
+      - X: 290000000
+        Y: 0
+      - X: 290000000
+        Y: 80000000
+      - X: 280000000
+        Y: 80000000
+      - X: 280000000
+        Y: 0
+      - X: 160000000
+        Y: 0
+      - X: 160000000
+        Y: -110000000
+    - - X: 220000000
+        Y: 80000000
+      - X: 160000000
+        Y: 80000000
+      - X: 160000000
+        Y: 90000000
+      - X: 150000000
+        Y: 90000000
+      - X: 150000000
+        Y: 80000000
+      - X: 100000000
+        Y: 80000000
+      - X: 100000000
+        Y: 70000000
+      - X: 150000000
+        Y: 70000000
+      - X: 150000000
+        Y: 60000000
+      - X: 160000000
+        Y: 60000000
+      - X: 160000000
+        Y: 70000000
+      - X: 210000000
+        Y: 70000000
+      - X: 210000000
+        Y: 30000000
+      - X: 220000000
+        Y: 30000000
+    - - X: -20000000
+        Y: 80000000
+      - X: -50000000
+        Y: 80000000
+      - X: -50000000
+        Y: 50000000
+      - X: -20000000
+        Y: 50000000
+    - - X: -40000000
+        Y: 60000000
+      - X: -40000000
+        Y: 70000000
+      - X: -30000000
+        Y: 70000000
+      - X: -30000000
+        Y: 60000000
+    - - X: 110000000
+        Y: 60000000
+      - X: 100000000
+        Y: 60000000
+      - X: 100000000
+        Y: 40000000
+      - X: 110000000
+        Y: 40000000
+    - - X: 110000000
+        Y: -60000000
+      - X: 70000000
+        Y: -60000000
+      - X: 70000000
+        Y: -40000000
+      - X: 100000000
+        Y: -40000000
+      - X: 100000000
+        Y: -30000000
+      - X: 50000000
+        Y: -30000000
+      - X: 50000000
+        Y: -20000000
+      - X: 40000000
+        Y: -20000000
+      - X: 40000000
+        Y: -40000000
+      - X: 60000000
+        Y: -40000000
+      - X: 60000000
+        Y: -70000000
+      - X: 110000000
+        Y: -70000000
+    - - X: -10000000
+        Y: -60000000
+      - X: 0
+        Y: -60000000
+      - X: 0
+        Y: -70000000
+      - X: 10000000
+        Y: -70000000
+      - X: 10000000
+        Y: -50000000
+      - X: -10000000
+        Y: -50000000
+      - X: -10000000
+        Y: -40000000
+      - X: -20000000
+        Y: -40000000
+      - X: -20000000
+        Y: -50000000
+      - X: -50000000
+        Y: -50000000
+      - X: -50000000
+        Y: -60000000
+      - X: -20000000
+        Y: -60000000
+      - X: -20000000
+        Y: -90000000
+      - X: -10000000
+        Y: -90000000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 16.999971, y: -12}
+      - {x: 17.000029, y: -1}
+      - {x: 45, y: -0.99997073}
+      - {x: 44.999973, y: 11}
+      - {x: -9, y: 10.99997}
+      - {x: -8.99997, y: -12}
+    - - {x: 16, y: -10.99997}
+      - {x: -8, y: -10.99997}
+      - {x: -7.9999704, y: 10}
+      - {x: 44, y: 9.99997}
+      - {x: 43.999973, y: 0}
+      - {x: 36, y: 0.0000294}
+      - {x: 36.00003, y: 4}
+      - {x: 41, y: 4.000029}
+      - {x: 40.999973, y: 5}
+      - {x: 35, y: 4.999971}
+      - {x: 34.999973, y: 0}
+      - {x: 29, y: 0.0000294}
+      - {x: 28.999971, y: 8}
+      - {x: 28, y: 7.9999704}
+      - {x: 27.999971, y: 0}
+      - {x: 16, y: -0.000029300001}
+    - - {x: 21.999971, y: 3}
+      - {x: 21.999971, y: 8}
+      - {x: 16, y: 8.00003}
+      - {x: 15.999971, y: 9}
+      - {x: 15, y: 8.99997}
+      - {x: 14.999971, y: 8}
+      - {x: 10, y: 7.9999704}
+      - {x: 10.00003, y: 7}
+      - {x: 15, y: 6.9999704}
+      - {x: 15.000029, y: 6}
+      - {x: 16, y: 6.000029}
+      - {x: 16.000029, y: 7}
+      - {x: 21, y: 6.9999704}
+      - {x: 21.000029, y: 3}
+    - - {x: -2.0000293, y: 5}
+      - {x: -2.0000293, y: 8}
+      - {x: -5, y: 7.9999704}
+      - {x: -4.999971, y: 5}
+    - - {x: -3, y: 6.0000296}
+      - {x: -4, y: 6.0000296}
+      - {x: -3.9999704, y: 7}
+      - {x: -3, y: 6.9999704}
+    - - {x: 10.99997, y: 4}
+      - {x: 10.99997, y: 6}
+      - {x: 10, y: 5.999971}
+      - {x: 10.00003, y: 4}
+    - - {x: 10.99997, y: -7}
+      - {x: 10.99997, y: -6}
+      - {x: 7, y: -5.9999704}
+      - {x: 7.0000296, y: -4}
+      - {x: 10, y: -3.999971}
+      - {x: 9.99997, y: -3}
+      - {x: 5, y: -2.9999707}
+      - {x: 4.999971, y: -2}
+      - {x: 4, y: -2.0000293}
+      - {x: 4.000029, y: -4}
+      - {x: 6, y: -4.0000296}
+      - {x: 6.000029, y: -7}
+    - - {x: -1.0000293, y: -9}
+      - {x: -0.9999706, y: -6}
+      - {x: 0, y: -6.0000296}
+      - {x: 0.000029300001, y: -7}
+      - {x: 1, y: -6.9999704}
+      - {x: 0.99997073, y: -5}
+      - {x: -1, y: -4.9999704}
+      - {x: -1.0000293, y: -4}
+      - {x: -2, y: -4.000029}
+      - {x: -2.0000293, y: -5}
+      - {x: -5, y: -5.000029}
+      - {x: -4.999971, y: -6}
+      - {x: -2, y: -6.0000296}
+      - {x: -1.9999708, y: -9}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 653318712}
+--- !u!50 &653318718
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653318712}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &704941889
 GameObject:
   m_ObjectHideFlags: 0
@@ -15568,7 +15864,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879838696}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 39076cb3235c6c346bbae8f4638bd733, type: 3}
@@ -17585,8 +17881,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 361756924}
   - {fileID: 653318713}
+  - {fileID: 361756924}
   m_Father: {fileID: 1313933801}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19411,7 +19707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIeyfuR2qeAIAADUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWxCV/urSWE9EBgQju5+CKsNdYgSx5J5iMZ/ntXso1dlwvye7tvd5/W/iJcmgISq/Rac7ZRDMj3AXFn8m3Qkq9wpUcl9/wTmpgPzmzmgqiPeaeWK8RDl2ZUDlbz5Ic8ChccIFhKniqdr9gRlspYg3BKhQGktLIuWyL0NSBX/BtGLuWGp/HcnT7xFAWDOx4TkBZ0Gxo+jSL3m4d1xjAYTTwym4zr1OFiFE2C2SxaDYOFVyllImheAHMjtWLTSVP2yYdJHLaOcPKJEoKbulNib4V3Yl9koMFZwTjFwX134WiKQAb8mFmn183epqkBW/ui6e2Za3SwkiU/VWVrTs2pauxMRek7GFe9V6Kb//hh6OlUq/y1qRsGrobNeHJ6p7eEGtvxvQs/d1r3/lyoONGDgI8M5Jtaa1VKhqTVpUstDYyf28fHaMsMklOLV632wLJoDW+uublkN8PdT39dCp4fHDWaVMBeKG+43w3QeDW/sGG/OaaWQNR18cfAb3rsrlhNvHBtLFL1lNK1d1CldqFk5T1z05R2qbQED9dNFyCpsLcdytj+Ffa4Ttke80Ldy1QXr7nmHemleLiND4IetVOXx2WZTF02YLJtaQWXXTHHvKFRSyVltWKmx7q8falTmnTzjiVn/y4XCcPZPIqS8VPI5lEY0OF0spiNU8YWhyiMaDQjfvu4xEmp2FWt1gbhvcnWSomb1nxlBmtNC7/vTNPLmn/mqmM6l6naJxpAbiuFR+egsQi+mGzFOFq0B2u59DdOvmIiVHICFj+EYj/q6mo1jVuVmBT8rKxDYrL0n5WYOPixzTsNZw4XV7wRu5P7X1BLAwQUAAAICAAACCHs81fnaG0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0kqGhmbmlZbKRsWGKuaWhQaKuqYmFmVFaSopFkqWhZaKlmVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAACCHsn7kdqngCAAA1BQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAACCHs81fnaG0AAAB4AAAACQAkAAAAAAAAAAAAAADFAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAH0DAAAAAA==
+    dataString: UEsDBBQAAAgIAAAIIeyDFvYDeQIAADQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWxCV/urSWE9EBgQju5+CKsNdYgSx5J5iMZ/nu1so1dlwvye7tvd5/W/iJcmgISq/Rac7ZRDMj3AcEz+TZoyVe40qOSe/4JTcwHZzbDIOpj3qnlyuEhphmVg9U8+SGPAoMDB5aSp0rnK3aEpTLWODilwoCjtLKYLR30NSBX9zeMMOXmTuM5nj7dKQoGd3dMQFrQbWj4NIrwNw/rjGEwmnhkNhnXqcPFKJoEs1m0GgYLr1LKRNC8AIYjtWLTSVP2yYdJN2wdgfKJEoKbulNib4V3Yl9koAGtYJy6wX134WjqgAz4MbOo183epqkBW/ui6e2Za+dgJUt+qsrWnJpT1diZitJ3MK56r0Q3//HD0NOpVvlrUzcMsIbNeHJ6p7eEGtvxvQs/d1r3/lyoONGDgI8M5Jtaa1VK5kirS0wtDYyf28fHaMsMklOLV632wLJoDW+uublknOHup78uBc8PSI0mFbAXyhvudwO0u5pfrmG/OaaWcCh28cfAb3rsrlhNvHBtrKPqKSW2d1ClxlCy8p7hNKVdKi3Bw3XTBUgq7G3nZGz/Cntcp2yPeaH4MtXFa655R3opHm7jg6BH7dTlcVkmU5cNmGxbWsFlVwyZN2fUUklZrZjpsZi3L3VKE2iHPZac/btbJAxn8yhKxk8hm0dhQIfTyWI2ThlbHKIwotGM+OXj0g1Kxa7qtPbHXZtsxaVbtOYjM1hrWvh1Z5pe1vwzVx3PuUzVPtEAclspPBoH7Yq495KtGHcO7cFaLv2Fk6+YCJWcgMUPodhPurpaTeNWJSYFPyuLSEyW/qsSE4Qfy7zTcOZwweKN2J3c/wJQSwMEFAAACAgAAAgh7PNX52htAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKhoZm5pWWykbFhirmloUGirqmJhZlRWkqKRZKloWWipZlSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAgh7IMW9gN5AgAANAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAgh7PNX52htAAAAeAAAAAkAJAAAAAAAAAAAAAAAxgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB+AwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
