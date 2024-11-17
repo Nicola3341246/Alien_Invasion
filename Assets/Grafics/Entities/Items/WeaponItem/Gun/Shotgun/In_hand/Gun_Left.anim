@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Gun_Up
+  m_Name: Gun_Left
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -63,7 +63,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 419fc9f258a3ae64a9b9765f873279b0, type: 3}
+      value: {fileID: 146690833, guid: eb80f780f614cf141a63ffc624750827, type: 3}
     attribute: m_Sprite
     path: Weapon
     classID: 212
@@ -104,7 +104,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 419fc9f258a3ae64a9b9765f873279b0, type: 3}
+    - {fileID: 146690833, guid: eb80f780f614cf141a63ffc624750827, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
